@@ -43,7 +43,7 @@ console.log(gradient.mind.multiline(logo))
 
 
 const showResume = async () => {
-    const greetings = chalkAnimation.karaoke("\n👋 This is Walid Lamraoui's CV ✨ Please wait a moment, 🙏 Thank You.", 2)
+    const greetings = chalkAnimation.karaoke("\n👋 This is Walid Lamraoui's CV ✨ Please wait a moment.. 🙏 Thank You.", 2)
     spinner.start()
     await sleep()
     spinner.success()
