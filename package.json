@@ -1,0 +1,34 @@
+{
+  "name": "walid-resume",
+  "version": "1.0.0",
+  "description": "Resume of walid lamraoui as an awesome npx command",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzc0d3r/npx-resume.git"
+  },
+  "keywords": [
+    "resume",
+    "web",
+    "developer",
+    "frontend",
+    "backend"
+  ],
+  "author": "Walid Lamraoui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dzc0d3r/npx-resume/issues"
+  },
+  "homepage": "https://github.com/dzc0d3r/npx-resume#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "chalk-animation": "^2.0.3",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.2.10",
+    "nanospinner": "^1.1.0"
+  }
+}
