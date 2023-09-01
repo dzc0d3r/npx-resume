@@ -1,8 +1,9 @@
 const data =
 {
-    "Tech Stack & Skills 💻  ": [
+    "Skills & Tech Stack  💻  ": [
         "Html5️⃣, Css3️⃣",
         "JavaScript 🇯 🇸",
+        "NodeJS / Express 🕸️",
         "React ⚛︎",
         "NextJS ⚛︎ 🔥",
         "Tailwindcss 😍",

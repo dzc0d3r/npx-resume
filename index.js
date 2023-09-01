@@ -28,7 +28,7 @@ const bye = `
 
 
 const response = chalk.hex('#749BC2')
-const spinner = createSpinner(" Loading please wait ..")
+const spinner = createSpinner()
 
 const resumeOptions = {
     type: "list",
@@ -37,11 +37,13 @@ const resumeOptions = {
     choices: [...Object.keys(data), "Exit"]
 };
 
-
 const sleep = (ms = 2100) => new Promise((resolve) => setTimeout(resolve, ms))
+
 console.log(gradient.mind.multiline(logo))
+
+
 const showResume = async () => {
-    const greetings = chalkAnimation.karaoke("\n👋 This is Walid Lamraoui's resume ✨ Please wait a moment 🙏 Thank You \n ", 2)
+    const greetings = chalkAnimation.karaoke("\n👋 This is Walid Lamraoui's CV ✨ Please wait a moment, 🙏 Thank You.", 2)
     spinner.start()
     await sleep()
     spinner.success()
@@ -49,6 +51,7 @@ const showResume = async () => {
     handleResume();
 
 };
+
 const goodBye = async () => {
     console.log(gradient.mind.multiline(bye))
     const goodBye = chalkAnimation.rainbow("\nThank You for reading my resume 😍🙏\n", 2)
@@ -60,8 +63,6 @@ const goodBye = async () => {
 const handleResume = async () => {
 
     try {
-
-
         const answer = await inquirer.prompt(resumeOptions);
         if (answer.resumeOptions === "Exit") {
             await goodBye()
